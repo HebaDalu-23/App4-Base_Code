@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Heba Dalu
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -68,8 +68,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+	<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Strep or Flu?</h1> <!--This creates a header-->
+</div>
+	
+<div id="content" class="w3-container"> 
+	<p>Wondering if your sore throat is caused by strep or the flu this winter? Answer a few short questions to find out!</p> <!--This is for the content of the header-->
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--This creates a button to get started and go to next page-->
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	</div>
+</div>
+	<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Does it hurt to swallow?</h1> <!--This line of code is for the first question-->
+	</div>
+	
+    	<div id="content" class="w3-container"> <!--This line of code helps create the content for the first question-->
+        <p><a href="#two" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
+	<p><a href="#two" class="w3-btn w3-black"> No </a>   <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
+    	</div>
+</div>
 	
 </body>
 </html>
