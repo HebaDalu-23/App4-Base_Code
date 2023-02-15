@@ -38,7 +38,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	//YOUR JAVASCRIPT GOES HERE
+	var strep_count = 0; //This creates a variable to count strep
+        var flu_count = 0; //This creates a variable to count flu
+
+
+        function strepAdd(){ 
+            strep_count = strep_count + 1;
+		alert("strep_count: " + strep_count);
+        } // This function is created to keep track of the count of strep symptoms and alert users of score towards strep diagnosis
+
+        function fluAdd(){
+            flu_count = flu_count + 1;
+		alert("flu_count: " + flu_count);
+        } // This function is created to keep track of the count of flu symptoms and alert users of score towards flu diagnosis
+	
+	function displayResults (){ 
+	var strepPercentage = (strep_count / 4) * 100; // This variable is created to calculate percentage of strep symptoms
+	var fluPercentage = (flu_count / 4) * 100; //This varibale is created to calculate percentage of flu symptoms
+	
+	var resultText= document. getElementById("results"); 
+	resultText.innerHTML = "Probability it is strep =" + strepPercentage + "<br> Probability it is the flu =" + fluPercentage; 
+	// This variable combines allergy and cold scores and gives it an id to display
+	}; // This creates the function to calculate and display results at the end
 
 </script>	
 
@@ -88,8 +109,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container"> <!--This line of code helps create the content for the first question-->
-        <p><a href="#two" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
-	<p><a href="#two" class="w3-btn w3-black"> No </a>   <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
+        <p><a href="#two" onclick="strepAdd();" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
+	<p><a href="#two" onclick="fluAdd();" class="w3-btn w3-black"> No </a>   <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
     	</div>
 </div>
 	<div class="page" id="two"> <!--This is the next page-->
@@ -98,8 +119,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container"> <!--This line of code helps create the content for the second question-->
-	<p><a href="#three" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
-	<p><a href="#three" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
+	<p><a href="#three" onclick="strepAdd();" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
+	<p><a href="#three" onclick="fluAdd();" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
 		
 	</div>	
 </div>
@@ -109,8 +130,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container"> <!--This line of code helps create the content for the third question-->
-        <p><a href="#four" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
-	<p><a href="#four" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
+        <p><a href="#four" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
+	<p><a href="#four" onclick="strepAdd();" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
 			
 	</div>
 </div>	
@@ -121,8 +142,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container"> <!--This line of code helps create the content for the fourth question-->
-        <p><a href="#five" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
-	<p><a href="#five" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
+        <p><a href="#five" onclick="fluAdd();" class="w3-btn w3-black"> Yes </a> <!--When clicked, this adds a count towards flu and tells it to go to the next page-->
+	<p><a href="#five" onclick="strepAdd();" class="w3-btn w3-black"> No </a> <!--When clicked, this adds a count towards strep and tells it to go to the next page-->
 				
 	</div>
 </div>
