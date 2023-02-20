@@ -17,15 +17,16 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to help distinguish between the diagnoses of strep throat and the flu. This code is not meant to substitute seeing a medical doctor. 
  
 Known Issues:
-blah, blah, blah, blah
+None known at the moment
 Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 
 References:
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
+https://sekisuidiagnostics.com/products-all/osom-ultra-plus-flu-ab-test/ --> Note: The image used in this code is from this reference. 
 -->
 	
 <head> 
@@ -38,8 +39,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	var strep_count = 0; //This creates a variable to count strep
-        var flu_count = 0; //This creates a variable to count flu
+	var strep_count = 0; //This line of code creates a variable to count strep
+        var flu_count = 0; //This line of code creates a variable to count flu
 
 
         function strepAdd(){ 
@@ -95,7 +96,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <div id="content" class="w3-container"> 
-	<p>Wondering if your sore throat is caused by strep or the flu this winter? Answer a few short questions to find out!</p> <!--This is for the content of the header-->
+	<p>With many seasonal illnesses floating around this winter, you might be wondering if you have a viral infection, like COVID, the flu, or RSV, or a bacterial infection, like strep throat. Well, you're in the right place! Answer a few short questions to find out!</p> <!--This is for the content of the header-->
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--This creates a button to get started and go to next page-->
 	
@@ -110,7 +111,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container"> <!--This line of code helps create the content for the first question-->
-		<img src="flutest.jpeg" alt="Flu Testing Image"> <!--testing image-->
+		<img src="flutest.jpeg" alt="Flu Testing Image"> <!--The following six lines of code help insert a resizeable image by telling it which image to display and the dimensions of it.-->
 		<style>
        	img, object{
             	max-height:30%;
@@ -122,7 +123,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
     	</div>
 </div>
-	<div class="page" id="two"> <!--This is the next page-->
+	<div class="page" id="two"> <!--This is the second and next page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Are there white spots in the back of your throat?</h1> <!--This line of code is for the second question-->
 	</div>
@@ -133,7 +134,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	</div>	
 </div>
-	<div class="page" id="three"> <!--This is the next page-->
+	<div class="page" id="three"> <!--This is the third and next page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Do you have a cough?</h1> <!--This line of code is for the third question-->
 	</div>
@@ -144,7 +145,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			
 	</div>
 </div>	
-	<div class="page" id="four"> <!--This is the next page-->
+	<div class="page" id="four"> <!--This is the fourth and next page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Do you have a runny nose or congestion?</h1> <!--This line of code is for the fourth question-->
 
@@ -156,14 +157,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 				
 	</div>
 </div>
-	<div class="page" id="five"> <!--This is the next and final page-->
+	<div class="page" id="five"> <!--This is the final page-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1> <!--This line of code is for the results page-->
 
 	</div>
 		
 	<div id="content" class="w3-container"> <!--This is the next and final page-->
-		<p> Click Below </p> <!--creates space between header and button-->
+		<p> Click Below. Note: Strep throat, unlike viruses, won't improve with time and needs antibiotics in order to improve. </p> <!--This line of code helps create space between the button and informs users that a strep diagnosis requires antibiotics.-->
 		<a onclick="displayResults();" class="w3-btn w3-black"> Get Results </a> <!--When clicked, takes users to get their results-->
 		<p id="results"></p>	<!--This codes for the results id-->
 		
